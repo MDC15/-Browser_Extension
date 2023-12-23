@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Todo list",
+  "version": "1.0",
+  "description": "To-do list app extension",
+  "icons": {
+    "48": "./assets/icon.png"
+  },
+  "action": {
+    "default_icon": "./assets//icon.png",
+    "default_popup": "./src/html/popup.html"
+  },
+  "permissions": ["storage", "notifications", "history"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

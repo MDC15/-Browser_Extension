@@ -1,0 +1,65 @@
+h3 {
+  text-align: center;
+  color: #22f826;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#addTaskBtn {
+  background-color: #4caf50; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none; /* Không có viền */
+  padding: 10px 20px; /* Kích thước lề nút */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px; /* Góc bo tròn */
+  opacity: 2;
+  padding: 8px;
+}
+
+#addTaskBtn:hover {
+  background-color: #45a049; /* Màu nền khi hover */
+}
+
+#historyContainer {
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#taskHistory {
+  list-style-type: none;
+  padding: 0;
+}
+
+#taskHistory li {
+  margin-bottom: 8px;
+}
+
+#taskHistory {
+  text-align: center;
+  list-style: none; /* Loại bỏ chấm đầu dòng của danh sách */
+  padding: 0;
+}
+#taskHistory li {
+  display: inline-block; /* Đảm bảo các phần tử <li> không bị xuống dòng */
+  margin: 0 10px; /* Khoảng cách giữa các phần tử */
+}

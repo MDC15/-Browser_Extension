@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="../css/Main.css" />
+    <link rel="stylesheet" href="../css/Deadline.css" />
+  </head>
+  <body>
+    <h1>Things to do✍🏻</h1>
+    <h2></h2>
+    <div id="app">
+      <form>
+        <input
+          autocomplete="off"
+          type="text"
+          name="item"
+          class="item"
+          placeholder="Add new task..."
+        />
+        <button type="submit">+ Add</button>
+      </form>
+      <h3>Task Manager</h3>
+      <ul></ul>
+    </div>
+    <div class="datetime">
+      <form>
+        <label for="deadlineInput">Deadline:</label>
+        <input type="datetime-local" id="deadlineInput" />
+        <button type="button" id="addTaskBtn">Commit</button>
+        <audio id="alarmSound" src="../audio/chill.mp3" preload="auto"></audio>
+      </form>
+      <div id="historyContainer">
+        <h3>Task History</h3>
+        <ul id="taskHistory"></ul>
+      </div>
+    </div>
+    <script src="../js/AddTasks.js"></script>
+    <script src="../js/Deadline.js"></script>
+    <script src="../js/History.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
